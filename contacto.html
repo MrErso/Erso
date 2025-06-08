@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://kit.fontawesome.com/a2e0b2fc4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+      <li class="submenu-container">
+        <a href="#"><i class="fas fa-concierge-bell"></i> Servicios ▾</a>
+        <ul class="submenu">
+          <li><a href="servicios.html#web">Web</a></li>
+          <li><a href="servicios.html#apps">Apps</a></li>
+          <li><a href="servicios.html#blog">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+      <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+    </ul>
+  </nav>
+  <main style="padding: 20px;">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre"><br><br>
+      <label for="email">Correo:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

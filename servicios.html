@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="https://kit.fontawesome.com/a2e0b2fc4a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Logo" />
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="menu" id="menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+      <li class="submenu-container">
+        <a href="#"><i class="fas fa-concierge-bell"></i> Servicios ▾</a>
+        <ul class="submenu">
+          <li><a href="servicios.html#web">Web</a></li>
+          <li><a href="servicios.html#apps">Apps</a></li>
+          <li><a href="servicios.html#blog">Blog</a></li>
+        </ul>
+      </li>
+      <li><a href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de</a></li>
+      <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+    </ul>
+  </nav>
+  <main style="padding: 20px;">
+    <section id="web"><h2>Desarrollo Web</h2><p>Ofrecemos sitios web modernos y optimizados para SEO.</p></section>
+    <section id="apps"><h2>Aplicaciones</h2><p>Apps móviles para iOS y Android.</p></section>
+    <section id="marketing"><h2>Blog de aprendizaje</h2><p>Redes sociales y aprendizaje en linea.</p></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
